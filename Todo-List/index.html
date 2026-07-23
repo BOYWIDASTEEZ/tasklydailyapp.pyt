@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="/Todo-List/style.css">
+    </head>
+    <body>
+        <nav>
+            <div>
+                <h1 class="app-header">Taskly</h1>
+                <p class="app-tagline">Stay organized. Get things done</p>
+            </div>
+            <div class="btn-box" id="js-btn-box">
+                <button data-filter="all" class="filter-btn">All</button>
+                <button data-filter="active" class="filter-btn">Active</button>
+                <button data-filter="completed" class="filter-btn">Completed</button>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <form action="" class="todo-form" id="js-todo-form">
+                    <input
+                        type="text"
+                        class="todo-input"
+                        id="js-todo-input"
+                        autocomplete="off"
+                        placeholder="What needs to be done?"
+                    >
+                    <button type="submit" class="todo-input-btn" id="js-todo-submit">
+                        add
+                    </button>
+                </form>
+                <div class="task-area">
+                    <ul id="js-todos" class="todos"></ul>
+                </div>
+                <div class="task-toolbox">
+                    <p class="task-left" id="js-task-left">2</p>
+                    <button class="clear-btn" id="js-clear-btn">
+                        Clear completed
+                    </button>
+                </div>
+            </section>
+        </main>
+        <div id="js-overlay" class="overlay"></div>
+        <script src="/Todo-List/script.js"></script>
+    </body>
+</html>
